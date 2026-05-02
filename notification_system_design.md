@@ -1,7 +1,7 @@
 # CampusNotify — System Design Documentation
 stage 1 
 
-## Core Frontend Actions
+ Core Frontend Actions
 1. Authentication: Secure Login, Logout, and Token management
 2.Notification Feed: Paginated list fetching with type-based filtering.
 3. Read Status Tracking: Real-time sync of read/unread states.
@@ -40,7 +40,7 @@ stage 3
 
 3. Indexing makes the read operations faster it is safe for this use case and also add some extra cost . 
 
-## find all students who received a placement notification in the last 7 days
+ find all students who received a placement notification in the last 7 days
 SELECT DISTINCT u.name, u.email
 FROM users u
 JOIN notifications n ON u.id = n.user_id
