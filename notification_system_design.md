@@ -60,6 +60,12 @@ stage 5
 
  using batch sql insert you can insert many recors in single database command .
 
-stage 6 
+stage 6
+ SELECT * FROM notifications 
+    WHERE user_id = 'your-id' 
+    ORDER BY is_read ASC, 
+             FIELD(priority, 'urgent', 'high', 'medium', 'low'), 
+             created_at DESC;
 succesfully added in github .
+
 
